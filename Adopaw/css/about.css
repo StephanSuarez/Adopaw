@@ -1,11 +1,13 @@
 
 
-.information-section {
+section.information-section {
   max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: column; 
   gap: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .information-row {
@@ -15,10 +17,10 @@
 
 .information-row img {
   width: 30%;
+  border-radius: 20px;
 }
 
 .information-row p {
-  
   width: 70%; 
 }
 
@@ -41,7 +43,7 @@ section.pets-card {
 .pets-card .cards {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-evenly; 
   flex-wrap: wrap; 
   gap: 80px; 
 }
@@ -50,7 +52,11 @@ section.pets-card {
   flex: 1 1 calc(33.33% - 20px);
   box-sizing: border-box;
   max-width: 300px; 
+  padding: 20px;
   text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  margin: auto;
 }
 
 .pets-card .pet-img {
@@ -69,17 +75,18 @@ section.pets-card {
 /* Testimonies 2 Section */
 section.more-testimonies {
   position: relative;
-  height: 470px;
+  height: 350px;
 }
 
 .testimonies-img {
+  max-width: 700px;
+  height: 400px;
   margin: auto;
-  margin-top: 50px;
-  width: 1000px;
-  height: 600px;
+  margin-top: 30px;
   background: url('../assets/img/pets-testimonies.png');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   position: relative;
 }
 
@@ -106,7 +113,7 @@ section.more-testimonies {
 
 .wave-svg {
   position: relative; 
-  top: -340px; 
+  top: -240px; 
   z-index: -1;
   width: 100%;
   height: auto;
@@ -127,4 +134,93 @@ section.more-testimonies {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 1320px){
+  section.more-testimonies {
+    position: relative;
+    height: 450px;
+  }
+
+  .testimonies-img {
+    max-width: 900px;
+    height: 600px;
+  }
+
+  .wave-svg {
+    top: -340px;
+  }
+}
+
+@media (max-width: 860px){
+  section.more-testimonies {
+    height: 250px;
+  }
+
+  .testimonies-img {
+    height: 200px;
+  }
+
+  .wave-svg {
+    top: -100px;
+  }
+}
+
+@media (max-width: 720px){
+  .information-row, .pets-card .cards {
+    flex-direction: column;
+  }
+  .information-row img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .information-row p {
+    width: 100%; 
+  }
+  
+}
+
+@media (max-width: 680px){
+  section.more-testimonies {
+    height: 150px;
+  }
+
+  .testimonies-img {
+    height: 150px;
+  }
+
+  .testimonies-img::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #273036;
+    position: relative;
+    top: 100px;
+    left: 0; 
+    z-index: -1;
+  }
+}
+
+@media (max-width: 520px) {
+  footer{
+    height: 0px;
+  }
+
+  .footerspace{
+    position: relative;
+    margin-top: 100px;
+    top: -100px;
+    height: 100px;
+    background-color: #273036;
+  }
+  
+}
+
+@media (max-width: 350px){
+  .testimonies-img::after { 
+    height: 100px; 
+  }
 }

@@ -4,15 +4,15 @@ body {
     text-align: center;
 }
 
-.information-section{
+section.information-section{
   max-width: 1200px;
   margin:auto;
   margin-bottom: 50px;
+  padding: 10px 20px;
 }
 
 
 /* Form Section */
-
 section.form-section{
   margin-bottom: 50px;
 }
@@ -55,4 +55,19 @@ button {
 
 button:hover{
   background-color: #FF2368 ;
+}
+
+@media (max-width: 520px) {
+  footer{
+    height: 0px;
+  }
+
+  .footerspace{
+    position: relative;
+    margin-top: 100px;
+    top: -100px;
+    height: 100px;
+    background-color: #273036;
+  }
+  
 }
