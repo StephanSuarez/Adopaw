@@ -105,14 +105,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center; /* Center the content */
+  text-align: center;
   z-index: 2;
-  color: white; /* Set the text color to white */
+  color: white;
 }
 
 .footer-nav a,
 .footer-content p {
-  color: white; /* Set the color for navigation links and paragraph */
+  color: white;
 }
 
 @media (max-width: 1500px) {
@@ -159,7 +159,6 @@ footer {
     display: block !important;
   }
 
-  /* Posicionamos el menú fuera de la pantalla inicialmente */
   .menu-bar {
     display: block;
     position: fixed;
@@ -168,14 +167,13 @@ footer {
     width: 70%;
     height: 100%;
     background-color: #333;
-    transform: translateX(-100%); /* Comienza fuera de la pantalla */
-    transition: transform 0.4s ease-in-out; /* Animación de transición */
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
     z-index: 100;
   }
 
-  /* Cuando el menú está activo (visible), lo deslizamos hacia la derecha */
   .active-menu {
-    transform: translateX(0); /* Lo traemos a la vista */
+    transform: translateX(0);
   }
 
   .menu {

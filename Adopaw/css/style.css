@@ -1,5 +1,4 @@
 /* Fisrt section */
-
 section.welcome-section {
 	background-image: url('../assets/img/view-cats-dogs-being-friends.jpg');
 	background-size: cover;
@@ -60,7 +59,6 @@ div > .text-container{
 }
 .btn-container > button:hover, .btn-pink:hover{
   background-color: #FF2368;
-
 }
 
 /* Donations Section */
@@ -112,7 +110,6 @@ button.make-donation{
 }
 
 /* Infomration Section */
-
 section.information-section {
 	background-image: url('../assets/img/WhatsApp Image 2024-09-15 at 10.30.15 PM.jpeg');
 	background-size: cover;
@@ -235,5 +232,4 @@ div.information-section-items{
   .card-left>iframe{
     width: 280px;
   }
-
 }
